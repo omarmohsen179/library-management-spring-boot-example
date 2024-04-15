@@ -1,0 +1,12 @@
+type Query {
+  fileMetadata(fileId: ID!): FileMetadataDTO
+}
+
+type FileMetadataDTO {
+  id: ID!
+  name: String!
+  size: Int!
+  fileType: String!
+  createdAt: String!
+  updatedAt: String!
+}
